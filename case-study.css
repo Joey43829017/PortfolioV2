@@ -1,0 +1,579 @@
+/* Case Study Section Styles */
+
+.case-study-nav {
+    background: rgba(10, 10, 11, 0.98);
+}
+
+.case-study-nav .logo {
+    font-size: 1.25rem;
+    background: transparent;
+    -webkit-background-clip: initial;
+    -webkit-text-fill-color: var(--text-primary);
+    text-decoration: none;
+}
+
+/* Case Study Hero */
+.case-study-hero {
+    padding: 8rem 0 4rem;
+    background: radial-gradient(ellipse at center, rgba(59, 130, 246, 0.1) 0%, transparent 70%);
+    text-align: center;
+}
+
+.hero-eyebrow {
+    display: inline-block;
+    padding: 0.5rem 1.25rem;
+    background: rgba(59, 130, 246, 0.15);
+    border: 1px solid rgba(59, 130, 246, 0.3);
+    border-radius: 50px;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--accent);
+    margin-bottom: 1rem;
+}
+
+.case-study-hero h1 {
+    font-size: clamp(2.5rem, 10vw, 4.5rem);
+    font-weight: 800;
+    background: linear-gradient(135deg, #ffffff 0%, var(--text-secondary) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 0.75rem;
+}
+
+.hero-subtitle {
+    font-size: clamp(1.1rem, 3vw, 1.5rem);
+    color: var(--text-secondary);
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Gallery Header Section */
+.gallery-header-section {
+    padding: 2rem 0 4rem;
+    background: linear-gradient(180deg, var(--bg-primary) 0%, var(--bg-secondary) 100%);
+}
+
+.section-header {
+    margin-bottom: 3rem;
+}
+
+.section-number {
+    display: inline-block;
+    font-size: 4rem;
+    font-weight: 800;
+    color: rgba(59, 130, 246, 0.1);
+    line-height: 1;
+}
+
+.gallery-header-section .section-number {
+    display: none;
+}
+
+.gallery-header-section h2 {
+    font-size: clamp(2rem, 6vw, 3rem);
+}
+
+.gallery-grid-featured {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 12px;
+    transition: transform 0.5s ease;
+    display: block;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.05);
+}
+
+.gallery-credits {
+    margin-top: 3rem;
+    padding: 2rem;
+    background: var(--bg-secondary);
+    border-radius: 12px;
+    text-align: center;
+}
+
+.gallery-credits h4 {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Common section styles */
+.problem-section,
+.research-section,
+.engineering-section,
+.cad-section,
+.dfm-section,
+.production-section,
+.final-product-section,
+.conclusion-section {
+    padding: 6rem 0;
+}
+
+.section-header h2 {
+    font-size: clamp(1.75rem, 5vw, 2.5rem);
+    margin-bottom: 2rem;
+}
+
+/* Problem Section */
+.problem-content p {
+    font-size: 1.25rem;
+    color: var(--text-secondary);
+    margin-bottom: 2rem;
+}
+
+.problem-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.problem-card {
+    background: var(--bg-secondary);
+    padding: 2rem;
+    border-radius: 16px;
+    border: 1px solid var(--border);
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.problem-card:hover {
+    border-color: var(--accent);
+    transform: translateY(-4px);
+}
+
+.problem-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.problem-card h3 {
+    font-size: 1.25rem;
+    margin-bottom: 0.75rem;
+}
+
+.market-context {
+    background: linear-gradient(135deg, rgba(59, 130, 246, 0.1) 0%, transparent 100%);
+    padding: 2rem;
+    border-radius: 12px;
+    border-left: 4px solid var(--accent);
+}
+
+.market-context h4 {
+    color: var(--accent);
+    margin-bottom: 0.75rem;
+}
+
+.market-context p {
+    color: var(--text-secondary);
+    line-height: 1.8;
+}
+
+/* Research Section */
+.research-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 2rem;
+}
+
+.research-card {
+    background: var(--bg-secondary);
+    padding: 2rem;
+    border-radius: 16px;
+    border: 1px solid var(--border);
+}
+
+.research-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    color: var(--accent);
+}
+
+.comparison-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1.5rem;
+}
+
+.comparison-table th,
+.comparison-table td {
+    padding: 0.75rem;
+    text-align: left;
+    border-bottom: 1px solid var(--border);
+}
+
+.comparison-table th {
+    font-weight: 600;
+    color: var(--accent);
+}
+
+.comparison-table tr:hover td {
+    background: rgba(59, 130, 246, 0.05);
+}
+
+.requirement-list {
+    list-style: none;
+}
+
+.requirement-list li {
+    padding: 0.75rem 0;
+    border-bottom: 1px solid var(--border);
+    color: var(--text-secondary);
+}
+
+.requirement-list li::before {
+    content: '✓';
+    color: var(--accent);
+    margin-right: 0.5rem;
+}
+
+.requirement-summary {
+    font-style: italic;
+    color: var(--text-muted);
+    padding-top: 1rem;
+    border-top: 1px solid var(--border);
+}
+
+/* Engineering Section */
+.specs-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.spec-category h4 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: var(--accent);
+}
+
+.spec-table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.spec-table td {
+    padding: 1rem;
+    border-bottom: 1px solid var(--border);
+}
+
+.spec-table td:first-child {
+    font-weight: 500;
+    color: var(--text-secondary);
+}
+
+.spec-value {
+    font-family: 'Menlo', 'Monaco', monospace;
+    font-size: 1.1rem;
+    color: var(--accent);
+}
+
+.material-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+.material-card {
+    background: var(--bg-tertiary);
+    padding: 1.5rem;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.material-icon {
+    font-size: 2rem;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+/* CAD Section */
+.cad-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 3rem;
+}
+
+.cad-content h3 {
+    color: var(--accent);
+    margin-bottom: 1.5rem;
+}
+
+.workflow-steps {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.step-card {
+    background: var(--bg-secondary);
+    padding: 1.5rem;
+    border-radius: 12px;
+    border-left: 4px solid var(--accent);
+}
+
+.step-number {
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    background: var(--gradient-accent);
+    color: white;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 36px;
+    font-weight: 700;
+    margin-bottom: 0.75rem;
+}
+
+.step-card h4 {
+    margin-bottom: 0.5rem;
+}
+
+.cad-visuals img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.caption {
+    color: var(--text-muted);
+    font-size: 0.875rem;
+    margin-top: 0.75rem;
+}
+
+.gallery-trigger {
+    color: var(--accent);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/* DFM Section */
+.dfm-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 2rem;
+}
+
+.dfm-card {
+    background: var(--bg-secondary);
+    padding: 2rem;
+    border-radius: 16px;
+    border: 1px solid var(--border);
+}
+
+.dfm-card h3 {
+    color: var(--accent);
+    margin-bottom: 1.5rem;
+}
+
+.checklist {
+    list-style: none;
+    padding-left: 0;
+}
+
+.check-item {
+    padding: 0.75rem 0;
+    border-bottom: 1px solid var(--border);
+    color: var(--text-secondary);
+    display: flex;
+    align-items: center;
+}
+
+.check-item::before {
+    content: '✓';
+    color: var(--success);
+    margin-right: 0.75rem;
+    font-weight: bold;
+}
+
+/* Production Section */
+.production-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.production-card {
+    background: var(--bg-secondary);
+    padding: 2rem;
+    border-radius: 16px;
+    border: 1px solid var(--border);
+}
+
+.card-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.step-icon {
+    font-size: 2.5rem;
+}
+
+.process-steps {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.process-step {
+    background: var(--bg-tertiary);
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+.production-result {
+    text-align: center;
+}
+
+.production-result h3 {
+    color: var(--accent);
+    margin-bottom: 1.5rem;
+}
+
+/* Final Product Section */
+.product-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 3rem;
+}
+
+.product-hero {
+    text-align: center;
+}
+
+.product-hero img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+}
+
+.product-tagline {
+    font-size: 1.5rem;
+    background: var(--gradient-accent);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-top: 1rem;
+}
+
+.outcomes-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.outcome-card h4 {
+    color: var(--accent);
+    margin-bottom: 1rem;
+}
+
+.outcome-list {
+    list-style: none;
+    padding: 0;
+}
+
+.outcome-list li {
+    padding: 0.75rem 0;
+    border-bottom: 1px solid var(--border);
+    color: var(--text-secondary);
+}
+
+/* Conclusion Section */
+.conclusion-section {
+    background: linear-gradient(180deg, var(--bg-primary) 0%, var(--bg-tertiary) 100%);
+    text-align: center;
+    padding-bottom: 4rem;
+}
+
+.summary-content p {
+    font-size: 1.25rem;
+    color: var(--text-secondary);
+    max-width: 800px;
+    margin: 0 auto 1.5rem;
+}
+
+.summary-list {
+    list-style: none;
+    display: inline-block;
+    text-align: left;
+    padding: 2rem;
+    background: var(--bg-secondary);
+    border-radius: 16px;
+}
+
+.summary-list li {
+    padding: 1rem;
+    border-bottom: 1px solid var(--border);
+    color: var(--text-primary);
+}
+
+.summary-list li:last-child {
+    border-bottom: none;
+}
+
+/* Footer */
+.case-study-footer {
+    background: var(--bg-secondary);
+    padding: 3rem 0;
+    text-align: center;
+}
+
+.case-study-footer .logo-link {
+    color: var(--accent);
+    text-decoration: none;
+    font-size: 1.25rem;
+    transition: all 0.3s ease;
+}
+
+.case-study-footer .logo-link:hover {
+    color: var(--text-primary);
+}
+
+.case-study-footer p {
+    margin-top: 1rem;
+    color: var(--text-muted);
+    font-size: 0.875rem;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .featured-grid,
+    .cad-grid,
+    .product-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .research-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .gallery-grid-featured {
+        grid-template-columns: 1fr;
+    }
+
+    .gallery-item img {
+        height: 280px;
+    }
+
+    .comparison-table {
+        font-size: 0.85rem;
+    }
+
+    .comparison-table th,
+    .comparison-table td {
+        padding: 0.5rem;
+    }
+}

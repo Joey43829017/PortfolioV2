@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joey Kozlowski | Mechanical Engineer & Agentic AI Developer</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.160.0/examples/js/controls/OrbitControls.js"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo">Joey K.</a>
+            <div class="nav-links">
+                <a href="#projects">Projects</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Mechanical Engineering<br>& Agentic AI Development</h1>
+            <p>From concept to production. Physics-first design.<br>Autonomous systems for intelligent agents.</p>
+            <div class="hero-actions">
+                <a href="#projects" class="btn btn-primary">View Featured Project</a>
+                <a href="mailto:kozlowski.109@osu.edu" class="btn btn-secondary">Get in Touch</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FEATURED PROJECT SECTION - Takes 40% visual attention -->
+    <section id="featured-project" class="featured-project-section">
+        <div class="container">
+            <div class="project-badge">FLAGSHIP PROJECT</div>
+            <h2>ZERO TORQUE GOLF PUTTER</h2>
+            <p class="tagline">From Market Research to CNC Machined Product</p>
+            
+            <div class="featured-grid">
+                <!-- 3D Viewer -->
+                <div class="viewer-container">
+                    <div id="putter-viewer" class="viewer"></div>
+                </div>
+                
+                <div class="project-overview">
+                    <h3>The Challenge</h3>
+                    <p>Traditional putters suffer from face rotation and inconsistent alignment during stroke. Zero torque designs eliminate unwanted torsion for improved accuracy.</p>
+                    
+                    <div class="metrics-grid">
+                        <div class="metric-card">
+                            <span class="metric-icon">⚖️</span>
+                            <span class="metric-value">2850 g·cm²</span>
+                            <span class="metric-label">MOI (Moment of Inertia)</span>
+                        </div>
+                        <div class="metric-card">
+                            <span class="metric-icon">🎯</span>
+                            <span class="metric-value">±0.5°</span>
+                            <span class="metric-label">Torsional Stability</span>
+                        </div>
+                        <div class="metric-card">
+                            <span class="metric-icon">⏱️</span>
+                            <span class="metric-value">6 Months</span>
+                            <span class="metric-label">Design to Production</span>
+                        </div>
+                        <div class="metric-card">
+                            <span class="metric-icon">🔧</span>
+                            <span class="metric-value">CNC Machined</span>
+                            <span class="metric-label">Manufacturing Method</span>
+                        </div>
+                    </div>
+
+                    <a href="case-study.html" class="btn btn-primary btn-large">View Complete Case Study →</a>
+                </div>
+            </div>
+
+            <div class="project-timeline">
+                <h3>Engineering Timeline</h3>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <span class="timeline-dot"></span>
+                        <div class="timeline-content">
+                            <span class="timeline-phase">0-2 Months</span>
+                            <span class="timeline-title">Market Research & Competitive Analysis</span>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <span class="timeline-dot"></span>
+                        <div class="timeline-content">
+                            <span class="timeline-phase">2-4 Months</span>
+                            <span class="timeline-title">CAD Development (Onshape)</span>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <span class="timeline-dot"></span>
+                        <div class="timeline-content">
+                            <span class="timeline-phase">4-5 Months</span>
+                            <span class="timeline-title">Design for Manufacturing</span>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <span class="timeline-dot"></span>
+                        <div class="timeline-content">
+                            <span class="timeline-phase">5-6 Months</span>
+                            <span class="timeline-title">CNC Production & Quality Testing</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Image Gallery with Actual Images -->
+            <div class="image-gallery-section">
+                <h3>Project Gallery</h3>
+                
+                <div class="gallery-grid">
+                    <div class="gallery-item large">
+                        <img src="images/cad-render-isometric.png" alt="CAD Isometric View - Zero Torque Putter Design">
+                        <p class="image-caption">Isometric CAD Model - Onshape Design Environment</p>
+                    </div>
+
+                    <div class="gallery-item large">
+                        <img src="images/engineering-drawings-with-gdnt.png" alt="GD&T Engineering Drawings with Tolerances">
+                        <p class="image-caption">Engineering Drawings with GD&T Callouts</p>
+                    </div>
+
+                    <div class="gallery-item large">
+                        <img src="images/finished-putter-black-anodized.jpg" alt="Machined Zero Torque Golf Putter - Finished Product">
+                        <p class="image-caption">CNC Machined & Black Anodized - Final Production Part</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Additional Projects -->
+    <section id="projects" class="projects-section">
+        <div class="container">
+            <h2>Engineering Portfolio</h2>
+            
+            <div class="project-grid">
+                <!-- Autonomous Trading System -->
+                <article class="project-card featured">
+                    <div class="project-header">
+                        · · · <span class="project-tag">Agentic AI Systems</span>
+                        <span class="featured-badge">Featured</span>
+                    </div>
+                    · · · <h3>Autonomous Market Making Agent</h3>
+                                        <p>AI-driven market making with sub-millisecond decision loops. Reinforcement learning for adaptive strategy optimization.</p>
+                    <div class="project-stats">
+                        <span>Python/C++</span>
+                        <span>Multi-exchange</span>
+                        <span>15% Sharpe</span>
+                    </div>
+                    <a href="#" class="btn btn-outline">Learn More →</a>
+                </article>
+
+                <!-- Other projects can be added here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-content">
+                    <h2>About Me</h2>
+                    <p>I'm Joey Kozlowski, a mechanical engineer bridging physical systems and digital intelligence. I design products that work through physics-first principles and build algorithms that execute with precision.</p>
+                    
+                    <div class="skills-grid">
+                        <div class="skill-category">
+                            <h4>Mechanical Design</h4>
+                            <ul>
+                                <li>Fusion 360 CAD</li>
+                                <li>3D Printing</li>
+                                <li>CNC Machining</li>
+                                <li>FEA Analysis</li>
+                            </ul>
+                        </div>
+                        <div class="skill-category">
+                            <h4>Agentic AI & Software</h4>
+                            <ul>
+                                <li>Python/C++</li>
+                                <li>Reinforcement Learning</li>
+                                <li>LLM Agentic Workflows</li>
+                                <li>MVP Development</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-image">
+                    <!-- No headshot - using technical background image -->
+                    <img src="images/finished-putter-black-anodized.jpg" alt="Zero Torque Putter Design" style="height: 300px; object-fit: cover;">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2>Get in Touch</h2>
+            <p>Open to collaboration on mechanical design and agentic AI projects.</p>
+            
+            <div class="contact-links">
+                <a href="mailto:kozlowski.109@osu.edu" class="contact-link">
+                    📧 kozlowski.109@osu.edu
+                </a>
+                <a href="https://github.com/joeykozlo" class="contact-link">GitHub</a>
+                <a href="https://www.linkedin.com/in/joseph-kozlowski-8255dfs0093636312" class="contact-link">LinkedIn</a>
+            </div>
+
+            <footer class="footer">
+                <p>&copy; 2026 Joey Kozlowski. All rights reserved.</p>
+            </footer>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
